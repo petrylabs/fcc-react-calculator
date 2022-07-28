@@ -1,0 +1,94 @@
+{
+    "calculator": {
+        "buttons": [
+            {
+                "type": "allClear",
+                "name": "clear",
+                "value": "AC",
+                "span": "col-span-2"
+            },
+            {
+                "type": "operator",
+                "name": "divide",
+                "value": "/"
+            },
+            {
+                "type": "operator",
+                "name": "multiply",
+                "value": "*"
+            },
+            {
+                "type": "number",
+                "name": "seven",
+                "value": "7"
+            },
+            {
+                "type": "number",
+                "name": "eight",
+                "value": "8"
+            },
+            {
+                "type": "number",
+                "name": "nine",
+                "value": "9"
+            },
+            {
+                "type": "operator",
+                "name": "subtract",
+                "value": "-"
+            },
+            {
+                "type": "number",
+                "name": "four",
+                "value": "4"
+            },
+            {
+                "type": "number",
+                "name": "five",
+                "value": "5"
+            },
+            {
+                "type": "number",
+                "name": "six",
+                "value": "6"
+            },
+            {
+                "type": "operator",
+                "name": "add",
+                "value": "+"
+            },
+            {
+                "type": "number",
+                "name": "one",
+                "value": "1"
+            },
+            {
+                "type": "number",
+                "name": "two",
+                "value": "2"
+            },
+            {
+                "type": "number",
+                "name": "three",
+                "value": "3"
+            },
+            {
+                "type": "equals",
+                "value": "=",
+                "name": "equals",
+                "span": "col-span-1 row-span-2"
+            },
+            {
+                "type": "number",
+                "value": "0",
+                "name": "zero",
+                "span": "col-span-2"
+            },
+            {
+                "type": "operator",
+                "name": "decimal",
+                "value": "."
+            }
+        ]
+    }
+}
