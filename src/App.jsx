@@ -78,16 +78,10 @@ function App() {
     evaled == true && setEvaled(false)
   }
 
-  // 5 * - + 5 -> 10
+
   const processOperator = (inputValue) => {
     setOutput(inputValue);
-    const regex = /(.+?)([^\d]+)$/;
-
-    console.log('regex', regex.test(formula));
-    console.log('match', formula.match(regex));
-    console.log('replace', formula.replace(regex, '$1' + inputValue))
-    // isOperator(formula.slice(-1))
-    // ? setFormula(formula.slice(0, -1) + inputValue)
+    const regex = /(.+?)([^\d]+)$/;    
     regex.test(formula)
     ? setFormula(formula.replace(regex, '$1' + inputValue))
     : setFormula((evaled == true ? (formula.match(/\d+$/)).at(0) : formula) + inputValue)
@@ -95,7 +89,6 @@ function App() {
   }
 
   const processMinus = (inputValue) => {
-    console.log('process minus');
     const formulaLastTwoChars = formula.slice(-2);
     const hasTwoOperators = /[\+\-\*\/]{2}/;
     if(hasTwoOperators.test(formulaLastTwoChars) == false) {
@@ -149,17 +142,7 @@ function App() {
           id="control-panel"
           calcButtons={calcButtons}
         />
-        <div className="grid grid-cols-3 hidden">
-          <div className="col-span-2">1</div>
-          <div className="row-span-2">2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-        </div>
+        
       </div>
   )
 }

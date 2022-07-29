@@ -8,7 +8,7 @@ function CalcButton(props) {
         "operator": "bg-gray-500",
         "number": "bg-gray-800",
     }
-
+    
     const calcButtonStyles = [
         {
             key: 'border',
