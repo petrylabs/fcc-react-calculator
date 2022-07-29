@@ -1,5 +1,5 @@
-import FormulaScreen from "./components/FormulaScreen";
-import OutputScreen from "./components/OutputScreen";
+import FormulaScreen from "./FormulaScreen";
+import OutputScreen from "./OutputScreen";
 
 function Display(props) {
 
@@ -19,7 +19,8 @@ function Display(props) {
             className={`Display ${displayStyles}`}>
             <FormulaScreen
                 value={props.formulaValue}/>
-            <OutputScreen 
+            <OutputScreen
+                id={props.id} 
                 value={props.outputValue}/>
         </div>
     )

@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 
 function CalcButton(props) {
-    
-    useEffect(()=>{
-        console.log('props', props);
-    }, []);
 
     const colorScheme = {
         "allClear": "bg-red-500",
@@ -29,12 +25,19 @@ function CalcButton(props) {
         {
             key: 'padding',
             value: 'pt-4 pb-4'
+        },
+        {
+            key: 'hover:color',
+            value: 'hover:text-black'
         }
     ].filter(style => style.value).map(style => style.value).join(' ');
 
     return(
-        <button 
-            className={'CalcButton ' + calcButtonStyles}>
+        <button
+            id={props.name} 
+            className={'CalcButton ' + calcButtonStyles}
+            onClick={props.clickHandler}
+            value={props.value}>
             {props.value}
         </button>
     )

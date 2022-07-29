@@ -12,7 +12,9 @@ function ControlPanel(props) {
             className={'ControlPanel ' + controlPanelStyles}>
             {props.calcButtons.length > 0
             ? props.calcButtons.map(calcButton => 
-                <CalcButton 
+                <CalcButton
+                    key={calcButton.name}
+                    clickHandler={props.controlClickHandler}
                     {...calcButton}
                 />
             )

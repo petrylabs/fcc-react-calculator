@@ -9,6 +9,7 @@ function OutputScreen(props) {
 
     return(
         <div 
+            id={props.id}
             className={`OutputScreen ${outputScreenStyles}`}>
             {props.value}
         </div>
